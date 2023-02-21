@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Travel</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="js/scripts.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Navbar start bootstrap ==================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+      <a class="navbar-brand" href="index.html">Dream Travel</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="information.html">Information</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="login.html"
+              >Login<span class="sr-only">(current)</span></a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://travel.state.gov/content/travel/en/international-travel.html"
+            >
+              International Travel</a
+            >
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            id="search-box"
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button onclick="search()" class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+
+        <input type="text" id="search-box" name="search" placeholder="Search...">
+        <button onclick="search()">Search</button>
+      </div>
+    </nav>
+
+    <!-- navbar end ========================================== -->
+
+    <div
+      class="jumbotron text-black jumImg"
+      style="background-image: url(./images/travel.jpg) ;"
+    >
+      <h1 class="display-4">
+        <span style="background-color: rgb(241, 241, 241, 0.5)"
+          >Dream Travel
+        </span>
+      </h1>
+
+      <p>
+        <span style="background-color: rgb(241, 241, 241, 0.8)"
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+          minima omnis ducimus alias consequuntur rem, natus fugit porro quas
+          blanditiis culpa error doloremque officia itaque non quidem unde
+          quibusdam eveniet tempora temporibus. Ipsum velit numquam inventore
+          praesentium maiores quaerat hic illum eligendi quos culpa nesciunt,
+          quas eum atque magnam eaque sit obcaecati? Nemo ad itaque commodi
+          corrupti doloremque dolorum quo ipsam magnam aspernatur, atque
+          delectus quae quis, qui aliquam pariatur incidunt tempora magni! Porro
+          facere reprehenderit distinctio provident dicta nesciunt adipisci
+          ducimus enim amet nostrum molestiae dignissimos eaque rem quos cumque
+          natus sint, non officiis maiores cupiditate cum dolores illum.
+        </span>
+      </p>
+      <p class="lead">
+        <a
+          class="btn btn-primary btn-lg"
+          href="https://en.wikipedia.org/wiki/Travel"
+          role="button"
+          >Learn more</a
+        >
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Business Travel</h5>
+              <p class="card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
+                porro delectus, odit odio fuga quo!.
+              </p>
+              <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Family Travel</h5>
+              <p class="card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
+                porro delectus, odit odio fuga quo!.
+              </p>
+              <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Solo Travel</h5>
+              <p class="card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
+                porro delectus, odit odio fuga quo!.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Adventure  Travel</h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit porro delectus, odit odio fuga quo!.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div> -->
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                esse reprehenderit sapiente itaque temporibus mollitia animi!
+                Quos officiis praesentium alias eum, nemo accusantium? Rerum
+                ullam eum debitis eius iure, quam rem porro! Unde officiis
+                quisquam vel quam, porro rerum cumque veniam consequuntur?
+                Accusamus dolore sint harum quae repudiandae natus aut? .
+              </p>
+              <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                quas repellat libero asperiores, tempore eos animi ea maxime
+                nisi, quasi ducimus quis error dolorem sunt. Temporibus,
+                voluptatem! Soluta excepturi ex distinctio debitis eos dolores
+                consectetur architecto non fugiat? Rerum aut ipsam fugit
+                dignissimos in dolor neque obcaecati at nemo quae?.
+              </p>
+              <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div>
+        <h3>Lorem</h3>
+        <h5>for 4 people</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore
+          ullam hic nemo nihil alias molestias corrupti quod deleniti provident
+          aperiam molestiae repellendus suscipit, aut quas delectus neque animi
+          fugiat nam et doloribus expedita consectetur porro! Itaque ea mollitia
+          minima ipsa facere at dolorem dolor sint doloribus praesentium error
+          omnis, assumenda fugit totam ab illo nisi dolore nulla accusamus minus
+          eius vitae eveniet. Exercitationem neque facilis maxime ipsam aliquid
+          dolores, consectetur nam asperiores, ea eum obcaecati ut quo!
+          Explicabo temporibus recusandae voluptate ullam sequi. Voluptatem eum
+          quo autem inventore impedit. Praesentium, sed? Neque molestias esse
+          corrupti quisquam culpa ipsa facere?
+        </p>
+      </div>
+
+      <div>
+        <h2>Preparation</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ex
+          sapiente rerum ducimus quaerat, quidem iste dicta alias commodi eum
+          consectetur natus quod dignissimos animi maiores? Nisi ullam iste
+          dolorem.
+        </p>
+      </div>
+      <!-- <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3SwX8ANq7Ls"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div> -->
+    </div>
+
+    <footer class="footer">
+      <p>© Google. All Rights Reserved</p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <!-- Reference https://tasty.co/recipe/california-roll -->
+</html>
